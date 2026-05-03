@@ -1,22 +1,19 @@
 // src/App.tsx
-import { memo, useState } from 'react';
-
-const Count = memo(({ count }: { count: number }) => {
-	console.log('Countが再レンダリングされました');
-	return <h1>{count}</h1>;
-});
+import { useEffect, useRef } from 'react';
 
 const App = () => {
-	const [text, setText] = useState('');
-	const [count, setCount] = useState(0);
+	const inputRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		// マウント直後にinputにフォーカス
+    console.log(inputRef.current); // ここでinputRef.currentがnullでないことを確認
+		inputRef.current?.focus();
+	}, []);
 
 	return (
 		<div>
-			<input value={text} onChange={(e) => setText(e.target.value)} />
-			<p>入力: {text}</p>
-
-			<Count count={count} />
-			<button onClick={() => setCount((c) => c + 1)}>+1</button>
+			<h1>ページが開いたら自動でフォーカスされます</h1>
+			<input ref={inputRef} type="text" placeholder="ここにフォーカス" />
 		</div>
 	);
 };
