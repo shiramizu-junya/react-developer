@@ -1,21 +1,21 @@
-// src/App.tsx
-import { useEffect, useRef } from 'react';
+// import { FocusInput } from './lessons/02-useRef/FocusInput';
+// import { RenderCount } from './lessons/02-useRef/RenderCount';
+// import { ClearableInput } from './lessons/02-useRef/ClearableInput';
+// import { PreviousValue } from './lessons/02-useRef/PreviousValue';
+// import { ExpensiveList } from './lessons/03-useMemo/ExpensiveList';
+// import { ReferentialEquality } from "./lessons/03-useMemo/ReferentialEquality";
+// import { ChildButtonDemo, StaleClosureDemo } from './lessons/04-useCallback/ChildButton';
+// import { Counter } from "./lessons/05-useReducer/Counter";
+// import { FormReducer } from "./lessons/05-useReducer/FormReducer";
+import { ThemeDemo } from "./lessons/06-useContext/ThemeDemo";
+// import { TodoApp } from "./lessons/07-todo-app/TodoApp";
 
-const App = () => {
-	const inputRef = useRef<HTMLInputElement>(null);
-
-	useEffect(() => {
-		// マウント直後にinputにフォーカス
-    console.log(inputRef.current); // ここでinputRef.currentがnullでないことを確認
-		inputRef.current?.focus();
-	}, []);
-
+export default function App() {
 	return (
-		<div>
-			<h1>ページが開いたら自動でフォーカスされます</h1>
-			<input ref={inputRef} type="text" placeholder="ここにフォーカス" />
+		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
+			<h1>React Hooks Lessons</h1>
+			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
+			<ThemeDemo />
 		</div>
 	);
-};
-
-export default App;
+}
