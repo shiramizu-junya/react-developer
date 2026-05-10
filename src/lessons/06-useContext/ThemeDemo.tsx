@@ -1,4 +1,6 @@
-import { ThemeProvider, useTheme } from './ThemeContext';
+import { ThemeProvider } from './ThemeProvider';
+import { usePersistedTheme } from './usePersistedTheme';
+import { useTheme } from './useTheme';
 
 function Toolbar() {
 	// 中間コンポーネントは theme を知らなくて良い → Prop drilling 解消
@@ -22,10 +24,14 @@ function ThemedButton() {
 }
 
 export function ThemeDemo() {
+	const { theme, toggle } = usePersistedTheme();
+
 	return (
 		<section>
 			<h2>⑩⑪ useContext でテーマ配信</h2>
-			<ThemeProvider>
+			<button onClick={toggle}>テーマ切替</button>
+
+			<ThemeProvider theme={theme} toggle={toggle}>
 				<Toolbar />
 			</ThemeProvider>
 		</section>
