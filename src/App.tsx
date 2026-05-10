@@ -7,15 +7,14 @@
 // import { ChildButtonDemo, StaleClosureDemo } from './lessons/04-useCallback/ChildButton';
 // import { Counter } from "./lessons/05-useReducer/Counter";
 // import { FormReducer } from "./lessons/05-useReducer/FormReducer";
-import { ThemeDemo } from "./lessons/06-useContext/ThemeDemo";
-// import { TodoApp } from "./lessons/07-todo-app/TodoApp";
+// import { ThemeDemo } from "./lessons/06-useContext/ThemeDemo";
+import { TodoApp } from "./lessons/07-todo-app/TodoApp";
 
 export default function App() {
 	return (
 		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
-			<h1>React Hooks Lessons</h1>
 			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
-			<ThemeDemo />
+			<TodoApp />
 		</div>
 	);
 }
