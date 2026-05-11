@@ -8,13 +8,14 @@
 // import { Counter } from "./lessons/05-useReducer/Counter";
 // import { FormReducer } from "./lessons/05-useReducer/FormReducer";
 // import { ThemeDemo } from "./lessons/06-useContext/ThemeDemo";
-import { TodoApp } from "./lessons/07-todo-app/TodoApp";
+// import { TodoApp } from "./lessons/07-todo-app/TodoApp";
+import { CustomHooksDemo } from "./lessons/08-custom-hooks/CustomHooksDemo";
 
 export default function App() {
 	return (
 		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
 			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
-			<TodoApp />
+			<CustomHooksDemo />
 		</div>
 	);
 }
