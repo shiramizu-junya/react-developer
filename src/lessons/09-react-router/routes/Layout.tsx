@@ -1,28 +1,12 @@
-import { NavLink, Outlet } from 'react-router-dom';
-
-const linkStyle = ({ isActive }: { isActive: boolean }) => ({
-	fontWeight: isActive ? 'bold' : 'normal',
-	color: isActive ? '#0070f3' : '#333',
-	textDecoration: 'none',
-});
+import { Outlet, useNavigation } from 'react-router-dom';
 
 export function Layout() {
+	const nav = useNavigation();
 	return (
 		<div>
-			<header style={{ borderBottom: '1px solid #ccc', padding: 8 }}>
-				<nav style={{ display: 'flex', gap: 12 }}>
-					<NavLink to="/" end style={linkStyle}>
-						Home
-					</NavLink>
-					<NavLink to="/about" style={linkStyle}>
-						About
-					</NavLink>
-					<NavLink to="/users/1" style={linkStyle}>
-						User 1
-					</NavLink>
-				</nav>
-			</header>
-			<main style={{ padding: 16 }}>
+			<header>...</header>
+			<main>
+				{nav.state === 'loading' && <p style={{ color: 'gray' }}>読み込み中...</p>}
 				<Outlet />
 			</main>
 		</div>
