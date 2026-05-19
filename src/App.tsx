@@ -10,14 +10,17 @@
 // import { ThemeDemo } from "./lessons/06-useContext/ThemeDemo";
 // import { TodoApp } from "./lessons/07-todo-app/TodoApp";
 // import { CustomHooksDemo } from "./lessons/08-custom-hooks/CustomHooksDemo";
-import { RouterRoot } from "./lessons/09-react-router/RouterRoot";
+// import { RouterRoot } from "./lessons/09-react-router/RouterRoot";
+import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
 
 export default function App() {
 	return (
 		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
 			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
 			{/* <CustomHooksDemo /> */}
-			<RouterRoot />
+			{/* <RouterRoot /> */}
+			{/* <StateManagementDemo /> */}
+			<JotaiDerivedDemo />
 		</div>
 	);
 }
