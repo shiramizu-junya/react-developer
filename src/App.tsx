@@ -11,7 +11,7 @@
 // import { TodoApp } from "./lessons/07-todo-app/TodoApp";
 // import { CustomHooksDemo } from "./lessons/08-custom-hooks/CustomHooksDemo";
 // import { RouterRoot } from "./lessons/09-react-router/RouterRoot";
-import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
+// import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
 import { StateManagementDemo } from './lessons/10-state-management/StateManagementDemo';
 
 export default function App() {

@@ -1,7 +1,4 @@
-import { JotaiActionAtomDemo } from './jotai/ActionAtomDemo';
-import { JotaiBasicDemo } from './jotai/BasicDemo';
-import { JotaiDerivedDemo } from './jotai/DerivedDemo';
-import { JotaiReadWriteDemo } from './jotai/ReadWriteDemo';
+import { JotaiAsyncDemo } from './jotai/AsyncDemo';
 
 export const StateManagementDemo = () => {
 	return (
@@ -10,7 +7,8 @@ export const StateManagementDemo = () => {
 			{/* <JotaiBasicDemo /> */}
 			{/* <JotaiReadWriteDemo /> */}
 			{/* <JotaiDerivedDemo /> */}
-			<JotaiActionAtomDemo />
+			{/* <JotaiActionAtomDemo /> */}
+			<JotaiAsyncDemo />
 		</section>
 	);
 };
