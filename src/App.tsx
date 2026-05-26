@@ -12,6 +12,7 @@
 // import { CustomHooksDemo } from "./lessons/08-custom-hooks/CustomHooksDemo";
 // import { RouterRoot } from "./lessons/09-react-router/RouterRoot";
 import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
+import { StateManagementDemo } from './lessons/10-state-management/StateManagementDemo';
 
 export default function App() {
 	return (
@@ -19,8 +20,8 @@ export default function App() {
 			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
 			{/* <CustomHooksDemo /> */}
 			{/* <RouterRoot /> */}
-			{/* <StateManagementDemo /> */}
-			<JotaiDerivedDemo />
+			<StateManagementDemo />
+			{/* <JotaiDerivedDemo /> */}
 		</div>
 	);
 }

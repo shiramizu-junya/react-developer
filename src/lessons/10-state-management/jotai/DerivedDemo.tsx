@@ -4,8 +4,10 @@ import { firstNameAtom, fullNameAtom, lastNameAtom } from './atoms';
 export function JotaiDerivedDemo() {
 	const [first, setFirst] = useAtom(firstNameAtom);
 	const [last, setLast] = useAtom(lastNameAtom);
-	// 書き込み専用。atom の値が変わっても再レンダーされない
+	// 読み込み専用の useAtomValue もある
 	const full = useAtomValue(fullNameAtom);
+
+	console.log("JotaiDerivedDemo rendered");
 
 	return (
 		<section style={{ border: '1px solid #ccc', padding: 12 }}>
