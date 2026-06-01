@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { InlineStyleLesson } from '../InlineStyleLesson';
 import { About } from './routes/About';
 import { Home } from './routes/Home';
 import { Layout } from './routes/Layout';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 			},
 			{ path: '*', element: <NotFound /> },
 		],
+	},
+	{
+		path: '/lessons/inline',
+		element: <InlineStyleLesson />,
 	},
 ]);
 
