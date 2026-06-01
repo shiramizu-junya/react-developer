@@ -5,6 +5,7 @@ import { Home } from './routes/Home';
 import { Layout } from './routes/Layout';
 import { NotFound } from './routes/NotFound';
 import { UserDetail, userLoader } from './routes/users/UserDetail';
+import { TailwindHello } from '../TailwindHello';
 
 const router = createBrowserRouter([
 	{
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
 		path: '/lessons/inline',
 		element: <InlineStyleLesson />,
 	},
+	{
+		path: '/lessons/tw-hello',
+		element: <TailwindHello />,
+	}
 ]);
 
 export function RouterRoot() {
