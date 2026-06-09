@@ -14,16 +14,18 @@
 // import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
 // import { StateManagementDemo } from './lessons/10-state-management/StateManagementDemo';
 
-import { RouterRoot } from "./lessons/09-react-router/RouterRoot";
+import { CvaButton } from './lessons/11-shadcn/CvaButton';
 
 export default function App() {
 	return (
 		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
 			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
 			{/* <CustomHooksDemo /> */}
-			<RouterRoot />
+			{/* <RouterRoot /> */}
 			{/* <StateManagementDemo /> */}
 			{/* <JotaiDerivedDemo /> */}
+			{/* <NativeModal /> */}
+			<CvaButton />
 		</div>
 	);
 }
