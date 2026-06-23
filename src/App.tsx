@@ -14,18 +14,23 @@
 // import { JotaiDerivedDemo } from './lessons/10-state-management/jotai/DerivedDemo';
 // import { StateManagementDemo } from './lessons/10-state-management/StateManagementDemo';
 
-import { CvaButton } from './lessons/11-shadcn/CvaButton';
+// import { CvaButton } from './lessons/11-shadcn/CvaButton';
+// import { NativeModal } from './lessons/11-shadcn/NativeModal';
+// import { ButtonDemo } from "./lessons/11-shadcn/ButtonDemo";
+import { DialogDemo } from "./lessons/11-shadcn/DialogDemo";
 
 export default function App() {
-	return (
-		<div style={{ padding: 24, fontFamily: 'system-ui' }}>
-			{/* 学習中の章のコンポーネントだけコメントアウトを外す */}
-			{/* <CustomHooksDemo /> */}
-			{/* <RouterRoot /> */}
-			{/* <StateManagementDemo /> */}
-			{/* <JotaiDerivedDemo /> */}
-			{/* <NativeModal /> */}
-			<CvaButton />
-		</div>
-	);
+    return (
+        <div style={{ padding: 24, fontFamily: "system-ui" }}>
+            {/* 学習中の章のコンポーネントだけコメントアウトを外す */}
+            {/* <CustomHooksDemo /> */}
+            {/* <RouterRoot /> */}
+            {/* <StateManagementDemo /> */}
+            {/* <JotaiDerivedDemo /> */}
+            {/*<ButtonDemo />*/}
+            {/* <NativeModal /> */}
+            <DialogDemo />
+            {/*<CvaButton />*/}
+        </div>
+    );
 }
