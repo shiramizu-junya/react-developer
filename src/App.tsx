@@ -17,20 +17,22 @@
 // import { CvaButton } from './lessons/11-shadcn/CvaButton';
 // import { NativeModal } from './lessons/11-shadcn/NativeModal';
 // import { ButtonDemo } from "./lessons/11-shadcn/ButtonDemo";
-import { DialogDemo } from "./lessons/11-shadcn/DialogDemo";
+// import { DialogDemo } from "./lessons/11-shadcn/DialogDem o";
+import { DisclosureDemo } from "./lessons/12-headless-radix/DisclosureDemo";
 
 export default function App() {
     return (
         <div style={{ padding: 24, fontFamily: "system-ui" }}>
             {/* 学習中の章のコンポーネントだけコメントアウトを外す */}
             {/* <CustomHooksDemo /> */}
-            {/* <RouterRoot /> */}
+            {/* <RouterRoot /> */}      
             {/* <StateManagementDemo /> */}
             {/* <JotaiDerivedDemo /> */}
             {/*<ButtonDemo />*/}
             {/* <NativeModal /> */}
-            <DialogDemo />
+            {/*<DialogDemo />*/}
             {/*<CvaButton />*/}
+            <DisclosureDemo />
         </div>
     );
 }
