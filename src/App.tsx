@@ -19,7 +19,8 @@
 // import { ButtonDemo } from "./lessons/11-shadcn/ButtonDemo";
 // import { DialogDemo } from "./lessons/11-shadcn/DialogDem o";
 // import { DisclosureDemo } from "./lessons/12-headless-radix/DisclosureDemo";
-import { CountdownDemo } from "./lessons/12-headless-radix/CountdownDemo";
+// import { CountdownDemo } from "./lessons/12-headless-radix/CountdownDemo";
+import { HnSearch } from "./lessons/13-data-fetching-tanstack/HnSearch";
 
 export default function App() {
     return (
@@ -34,7 +35,8 @@ export default function App() {
             {/*<DialogDemo />*/}
             {/*<CvaButton />*/}
             {/*<DisclosureDemo />*/}
-            <CountdownDemo />
+            {/*<CountdownDemo />*/}
+            <HnSearch />
         </div>
     );
 }
